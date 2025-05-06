@@ -1,0 +1,11 @@
+Disease,Symptoms,Category
+Influenza,"fever,cough,sore throat,fatigue,muscle aches",Viral
+Common Cold,"runny nose,sneezing,sore throat,mild fever,congestion",Viral
+Pneumonia,"high fever,cough,chest pain,shortness of breath,fatigue",Bacterial
+Strep Throat,"sore throat,fever,swollen tonsils,difficulty swallowing,headache",Bacterial
+Allergic Rhinitis,"sneezing,itchy eyes,runny nose,nasal congestion,itchy throat",Allergic
+COVID-19,"fever,cough,shortness of breath,fatigue,sore throat,muscle aches",Viral
+Tuberculosis,"cough,weight loss,fatigue,sweating,fever",Bacterial
+Malaria,"fever,chills,sweating,headache,fatigue",Parasitic
+Chickenpox,"fever,itchy skin rash,fatigue,loss of appetite",Viral
+HIV,"fever,fatigue,sore throat,weight loss,night sweats",Viral
