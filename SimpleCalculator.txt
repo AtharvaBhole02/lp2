@@ -1,0 +1,55 @@
+public class SimpleCalculator {
+    public Decimal number1 { get; set; }
+    public Decimal number2 { get; set; }
+    public Decimal result { get; set; }
+    public String operation { get; set; }
+
+    public List<SelectOption> getOperations() {
+        return new List<SelectOption>{
+            new SelectOption('Add', 'Add'),
+            new SelectOption('Subtract', 'Subtract'),
+            new SelectOption('Multiply', 'Multiply'),
+            new SelectOption('Divide', 'Divide')
+        };
+    }
+
+    public void calculate() {
+        System.debug('Number 1: ' + number1);
+        System.debug('Number 2: ' + number2);
+        System.debug('Operation: ' + operation);
+
+        if (operation == 'Add') {
+            result = number1 + number2;
+            System.debug('Result (Addition): ' + result);
+        } else if (operation == 'Subtract') {
+            result = number1 - number2;
+            System.debug('Result (Subtraction): ' + result);
+        } else if (operation == 'Multiply') {
+            result = number1 * number2;
+            System.debug('Result (Multiplication): ' + result);
+        } else if (operation == 'Divide') {
+            if (number2 != 0) {
+                result = number1 / number2;
+                System.debug('Result (Division): ' + result);
+            } else {
+                System.debug('Attempted division by zero.');
+                ApexPages.addMessage(new ApexPages.Message(ApexPages.Severity.ERROR, 'Cannot divide by zero'));
+            }
+        } else {
+            System.debug('Invalid operation selected.');
+        }
+    }
+}
+
+
+
+/*SimpleCalculator calc = new SimpleCalculator();
+calc.number1 = 10;
+calc.number2 = 5;
+calc.operation = 'Multiply';
+calc.calculate();
+calc.operation = 'Add';
+calc.calculate();
+calc.operation = 'Subtract';
+calc.calculate();*/
+

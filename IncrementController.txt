@@ -1,0 +1,16 @@
+public class IncrementController {
+    public Integer inputNumber { get; set; }
+    public Integer result { get; set; }
+
+    // Method to increment input by 10
+    public void incrementByTen() {
+        System.debug('DEBUG: Input Number = ' + inputNumber);
+        result = inputNumber + 10;
+        System.debug('DEBUG: Result after increment = ' + result);
+    }
+}
+
+/*IncrementController inc = new IncrementController();
+inc.inputNumber = 25;
+inc.incrementByTen();
+*/
